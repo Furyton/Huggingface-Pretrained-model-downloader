@@ -12,4 +12,6 @@ there are 4 options, 2 of them are must-required. you can check it out by `./dow
 `-a` : save the files with another name, the format is the same as `-f`, the same order is required, some absence is ok.
 
 
-TODO: need more clearer prompt, like how many files are downloaded successfully..., note some files in huggingface.co are not sync on tuna, but these files are not that important i think.
+TODO: 
+- need more clearer prompt, like how many files are downloaded successfully..., note some files in huggingface.co are not sync on tuna, but these files are not that important i think.
+- i should add an option for downloading a certain bunch of files at a time instead of typing in all the file names.
