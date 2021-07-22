@@ -27,11 +27,11 @@ function do_wget() {
             OUTPUT=$REPO_ID
         fi 
 
-        if [ -n ${REPO_ID##*/*} ]
+        if [ -z ${REPO_ID##*/*} ]
         then
-            DOWNLOAD_URL=$URL$REPO_ID-${fl[i]}
-        else
             DOWNLOAD_URL=$URL$REPO_ID/${fl[i]}
+        else
+            DOWNLOAD_URL=$URL$REPO_ID-${fl[i]}
         fi
 
         if [ -z ${al[i]} ];
