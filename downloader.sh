@@ -20,14 +20,14 @@ function do_wget() {
             continue;
         fi
        	
-        expr index $REPO_ID "/"
+        # expr index $REPO_ID "/"
 	
-	if [ -z $OUTPUT ];
-	then
-		OUTPUT=${REPO_ID:index}
-	fi 
+        if [ -z $OUTPUT ];
+        then
+            OUTPUT=$REPO_ID
+        fi 
 
-        if (( $index == 0))
+        if [ -n ${REPO_ID##*/*} ]
         then
             DOWNLOAD_URL=$URL$REPO_ID-${fl[i]}
         else
@@ -68,7 +68,7 @@ do
             exit 0
             ;;
         [?])
-            printf $USAGE >&2
+            print >&2 $USAGE
             exit 1
             ;;
         *)
