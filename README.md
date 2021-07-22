@@ -10,3 +10,6 @@ there are 4 options, 2 of them are must-required. you can check it out by `./dow
 `-o` : output directory, by default it will download it into a dir the same as the repo id (e.g. ./julien-c/EsperBERTo-small)
 
 `-a` : save the files with another name, the format is the same as `-f`, the same order is required, some absence is ok.
+
+
+TODO: need more clearer prompt, like how many files are downloaded successfully..., note some files in huggingface.co are not sync on tuna, but these files are not that important i think.
