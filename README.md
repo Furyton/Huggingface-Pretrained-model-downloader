@@ -15,3 +15,10 @@ there are 4 options, 2 of them are must-required. you can check it out by `./dow
 TODO: 
 - need more clearer prompt, like how many files are downloaded successfully..., note some files in huggingface.co are not sync on tuna, but these files are not that important i think.
 - i should add an option for downloading a certain bunch of files at a time instead of typing in all the file names.
+
+
+UPDATE:
+- set default file list as "pytorch_model.bin,config.json,tokenizer.json,vocab.txt,tokenizer_config.json"
+- wget -O will overwrite -P option. fixed it
+- some files in tuna have redundant name prefix. fixed it
+- remove the verbose in wget except progress bar, but the wget version in my lab server is lower than 1.16, so an auxiliary function is needed.
