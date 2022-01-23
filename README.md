@@ -2,7 +2,7 @@
 
 ## note
 
-Since [tuna](https://tuna.moe/) has removed the support of `hugging-face-models` in Tsinghua mirror, this repo will no longer be useful.
+Since [tuna](https://tuna.moe/) has removed the support of `hugging-face-models` in Tsinghua mirror, **this repo will no longer be useful**.
 
 > 由于 Hugging Face 官方不再提供 AWS S3 形式的模型存储，转而使用 Git LFS（详见 相关讨论），并且日常下载量逐渐下降，我们将于近期移除 hugging-face-models 仓库。
 >
